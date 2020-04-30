@@ -11,3 +11,5 @@ class SR extends Component {
         )
     }
 }
+
+export default SR;

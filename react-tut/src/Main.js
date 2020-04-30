@@ -1,19 +1,20 @@
 import React, {Component} from 'react';
+import {HashRouter} from 'react-router-dom';
+
+import Nav from './Nav';
+import Content from './Content';
+
 
 class Main extends Component {
     render() {
         return (
+            <HashRouter>
             <div>
                 <h1>Simple SPA</h1>
-                <ul className="header">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/sr">SimulatorRadio</a></li>
-                    <li><a href="/contact">Contact</a></li>
-              </ul>
-              <div className = "content">
-
-              </div>
+                <Nav/>
+              <Content/>
             </div>
+            </HashRouter>
         )
     }
 }
