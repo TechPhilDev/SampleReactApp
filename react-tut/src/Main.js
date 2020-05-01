@@ -3,17 +3,18 @@ import {HashRouter} from 'react-router-dom';
 
 import Nav from './Nav';
 import Content from './Content';
+import Radio from './Radio';
 
 
 class Main extends Component {
     render() {
         return (
             <HashRouter>
-            <div>
-                <h1>Simple SPA</h1>
-                <Nav/>
-              <Content/>
-            </div>
+                <div>
+                    <Nav/>
+                    <Content/>
+                </div>
+                <Radio/>
             </HashRouter>
         )
     }
