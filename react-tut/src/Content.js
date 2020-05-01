@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {Switch, BrowserRouter as Router,Route,Link,Redirect, useLocation} from 'react-router-dom';
-import {motion, AnimatePresence} from 'framer-motion';
+import {Switch, Route} from 'react-router-dom';
+import {AnimatePresence} from 'framer-motion';
 import Home from './Home';
 import SR from './SR';
 import Contact from './Contact';

@@ -7,9 +7,6 @@ export const pageVariants = {
     },
     out: {
       opacity: 0,
-    },
-    transition: {
-        duration:3,
     }
   };
 
