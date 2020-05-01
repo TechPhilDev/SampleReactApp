@@ -139,11 +139,11 @@ body {
 
 @keyframes playerretract {
   from {right:58px}
-  to {right:-793px}
+  to {right:calc(-50% + 116px)}
 }
 
 @keyframes playerexpand {
-  from {right:-793px}
+  from {right:calc(-50% + 116px)}
   to {right:58px}
 }
 
