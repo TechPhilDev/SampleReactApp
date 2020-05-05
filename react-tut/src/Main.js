@@ -10,6 +10,7 @@ class Main extends Component {
     render() {
         return (
             <BrowserRouter>
+            
                 <div>
                     <Nav/>
                     <Content/>

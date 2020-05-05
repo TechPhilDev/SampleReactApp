@@ -20,7 +20,6 @@ body {
     background-color:#F8F9FA;
     padding: 0;
     margin:0;
-    
   }
   ul.header li a {
     color: #000;
@@ -48,7 +47,7 @@ body {
   .active {
       background-color: #0099FF;
   }
-  .playerDiv{
+    .playerDiv{
     top: 0;
     display: flex;
     height: 58px;
@@ -58,6 +57,20 @@ body {
     z-index: 1500;
     overflow: hidden;
   }
+
+  @media (max-width:500px) {
+    .playerDiv{
+      position:fixed;
+      top:0;
+      width:100%;
+    }
+    .playerDiv iframe {
+      position:fixed;
+      top:-92px;
+      right:0;
+    }
+  }
+  
 /*These declarations are needed to vertically centre the content on the page*/
 .outer {
   display: table;
@@ -100,6 +113,13 @@ body {
   -webkit-filter: drop-shadow(0 1px 9px #000000);
   filter: drop-shadow(0 1px 9px #000000);
 }
+
+  @media (max-width:500px){
+    .corner-triangle{
+    display:none;
+    z-index:-1;
+    }
+  }
 .corner-triangle .corner-triangle-text {
   position: relative;
   font-size: 2.1em;
@@ -162,4 +182,21 @@ body {
 .fade-enter.fade-enter-active {
   opacity: 1;
   transition: opacity 250ms ease-in;
+}
+.large-menu-classname{
+  text-align: left;
+}
+
+.small-menu-classname{
+  background-color:#F8F9FA;
+  height:58px;
+  position:fixed;
+  top:58px;
+  width:100%;
+  /*text-align:left;*/
+}
+
+.fa-bars, .fa-times{
+  height:58px;
+  width:30px !important;
 }

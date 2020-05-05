@@ -27,7 +27,7 @@ class Radio extends Component {
             <div>
            
                 <div id="radioplayer" className="playerDiv">
-                <a href="https://www.simulatorradio.com"><img className="srlogo" src={srlogo}/></a>
+                <a href="https://www.simulatorradio.com"><img className="srlogo" src={srlogo} alt="Simulator Radio Logo"/></a>
                     <Iframe url="https://embedded.rcast.net/fixedbar2/65141"
                     width="100%"
                     frameBorder="0"
