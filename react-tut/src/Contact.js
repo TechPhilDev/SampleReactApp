@@ -4,24 +4,28 @@ import {pageVariants} from './pageVariants'
 import ContactForm from './ContactForm'
 import {DevForm} from './Dev';
 
+function FormChoice(props) {
+    var isDev;
+    window.location.hostname === "localhost" || window.location.hostname === "dev.techphil.xyz" ? isDev=true : isDev=false;
+    var URLParams = new URLSearchParams(window.location.search);
+    if (URLParams.has("live")) {isDev=false;}
+    if (isDev) {
+        return <DevForm/>
+    } else {
+        return <ContactForm/>
+    }
+}
 
 
-var isDev;
+
 class Contact extends Component {
-    
     render(){
         return(
             <motion.div key={window.location.pathname} initial="initial" animate="in" exit="out" transition={pageVariants.transition} variants={pageVariants}>
-            
                 <h2>Get in Contact!</h2>
-                {isDev ? <ContactForm/> : <DevForm/>}
+                <FormChoice/>
             </motion.div>
         )
-    }
-    componentDidMount() {
-        window.location.href === "localhost" || window.location.href === "dev.techphil.xyz" ? isDev=true : isDev=false;
-        var URLParams = new URLSearchParams(window.location.search);
-        if (URLParams.has("live")) {isDev=false;}
     }
 }
 
