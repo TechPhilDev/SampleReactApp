@@ -50,7 +50,7 @@ body {
     .playerDiv{
     top: 0;
     display: flex;
-    height: 58px;
+    height: 64px;
     position: fixed;
     right: 58px;
     width: 50%;
@@ -75,11 +75,10 @@ body {
 .outer {
   display: table;
   position: absolute;
-  top: 0;
+  top: 60px;
   left: 0;
-  height: 100%;
+  height: calc(100% - 60px);
   width: 100%;
-  z-index:-1;
 }
 
 .middle {
@@ -99,7 +98,7 @@ body {
   display: block;
   cursor: pointer;
   width: 58px;
-  height: 58px;
+  height: 64px;
   border-style: solid;
   border-color:  #da0039 ; /* adjust for color of triangle */
   border:0;
@@ -133,7 +132,7 @@ body {
   transform:scale(1.5) rotate(0deg);
   text-align:center;
   position:fixed;
-  top:11px;
+  top:14px;
   right:16px;
 }
 .corner-triangle .corner-triangle-text a {

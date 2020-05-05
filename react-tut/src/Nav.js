@@ -8,6 +8,7 @@ import {DevDisclaimer} from './Dev'
 class Nav extends Component{
     render() {
         return(
+            <div className="navdiv">
             <ResponsiveMenu
             menuOpenButton={<FontAwesomeIcon icon={faBars}/>}
             menuCloseButton={<FontAwesomeIcon icon={faTimes}/>}
@@ -26,7 +27,8 @@ class Nav extends Component{
                 </ul>
             </>
             }
-            /> 
+            />
+            </div> 
         )
     }
 }
