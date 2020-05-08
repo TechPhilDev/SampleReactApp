@@ -16,7 +16,7 @@ class Content extends Component {
             <div className="middle">
             <div className="inner">
                 
-                <div className = "content">
+                <div className = "content" style={{overflowX:'hidden'}}>
                     <AnimatePresence exitBeforeEnter>
                         <Switch location={window.location} key={window.location.pathname}>
                             <Route exact path="/" component={Home}/>

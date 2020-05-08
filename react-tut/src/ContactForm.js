@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
 
 
 export default class ContactForm extends Component {
@@ -19,10 +20,23 @@ export default class ContactForm extends Component {
         action="https://formspree.io/xrgygela"
         method="POST"
       >
-        <input type="text" placeholder="Name" name="name"/>
-        <input type="email" placeholder="Email" name="email" />
-        <br></br>
-        <input type="textarea" placeholder="Message" name="message" /><br></br>
+        <Form>
+  <Form.Group controlId="formBasicEmail">
+    <Form.Label>Email address</Form.Label>
+    <Form.Control type="email" placeholder="Enter email" />
+    <Form.Text>
+      We'll never share your email with anyone else.
+    </Form.Text>
+  </Form.Group>
+
+  <Form.Group controlId="formBasicPassword">
+    <Form.Label>Password</Form.Label>
+    <Form.Control type="password" placeholder="Password" />
+  </Form.Group>
+  <Form.Group controlId="formBasicCheckbox">
+    <Form.Check type="checkbox" label="Check me out" />
+  </Form.Group>
+</Form>
         {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
         {status === "ERROR" && <p>Ooops! There was an error.</p>}
       </form>

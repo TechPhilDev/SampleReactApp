@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 body {
     background-image:url("2331.jpg");
     height:100vh;
@@ -7,9 +8,10 @@ body {
     background-position: 40%;
     padding: 0px;
     margin: 0;
+    font-family:"Montserrat", sans-serif;
   }
   h1, h2, p, ul, li {
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
   ul.header li {
     display: inline;
@@ -198,4 +200,11 @@ body {
 .fa-bars, .fa-times{
   height:58px;
   width:30px !important;
+}
+
+@media (max-width: 500px) {
+  .outer {
+    height: calc(100% - 180px);
+    top:180px;
+  }
 }

@@ -21,7 +21,7 @@ function FormChoice(props) {
 class Contact extends Component {
     render(){
         return(
-            <motion.div key={window.location.pathname} initial="initial" animate="in" exit="out" transition={pageVariants.transition} variants={pageVariants}>
+            <motion.div key={window.location.pathname} initial="out" animate="in" exit="out" variants={pageVariants}>
                 <h2>Get in Contact!</h2>
                 <FormChoice/>
             </motion.div>
