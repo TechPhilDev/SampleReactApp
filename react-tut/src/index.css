@@ -185,7 +185,7 @@ body {
   transition: opacity 250ms ease-in;
 }
 .large-menu-classname{
-  text-align: left;
+  text-align: left !important;
 }
 
 .small-menu-classname{
